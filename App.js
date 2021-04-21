@@ -19,7 +19,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch('https://ptfwf2r79k.execute-api.eu-west-1.amazonaws.com/dev/projects/5df9fa0cf98a4b0008647bcf/no-auth?bins-populated=true')
+    fetch('https://ptfwf2r79k.execute-api.eu-west-1.amazonaws.com/dev/projects/5df9fa0cf98a4b0008647/no-auth?bins-populated=true')
       .then(response => response.json())
       .then(responseData => {
         dispatch(setProjectActionCreator(responseData));
