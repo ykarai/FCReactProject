@@ -5,7 +5,7 @@ import Site from './components/Site/Site';
 import React, { useState, useEffect } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
-import image from './Images/flyComm.png'
+import image from './Images.png'
 import { useDispatch, useSelector } from "react-redux";
 import { setProjectActionCreator } from './store/actions/setProjectActionCreator'
 import User from './components/User/User';
@@ -37,7 +37,6 @@ function App() {
       pathname: '/Site',
       search: '?' + site.displayName
     });
-
   };
   return (
     <div className="App">
