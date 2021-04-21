@@ -10,10 +10,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProjectActionCreator } from './store/actions/setProjectActionCreator'
 import User from './components/User/User';
 
-
-//let i = 0;
 function App() {
-//console.log('render number :' , i++);
   
   const [siteData, setSiteData] = useState([]);
   let history = useHistory();
@@ -46,11 +43,9 @@ function App() {
     <div className="App">
       <img src={image} width="150" height="70" alt="pic" />
       <Switch>
-
       <Route path="/" exact >
           <User/>
       </Route>
-        
         <Route path="/" exact >
           <Panel showSite={showSiteDataHandler}
             history={history} />
@@ -58,10 +53,7 @@ function App() {
         <Route path="/Site">
           <Site data={siteData} history={history} />
         </Route>
-      </Switch>
-
-
-      
+      </Switch>   
     </div>
   );
 }
