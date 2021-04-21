@@ -8,7 +8,6 @@ import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import dataReducer from './store/reducers/data';
 import userReducer from './store/reducers/user';
-
 // import { useReducer } from 'react';
 // import combineReducers from 'react-combine-reducers';
 
@@ -16,9 +15,7 @@ const rootReducer = combineReducers({
   data: dataReducer,
   user: userReducer 
 });
-
 const store = createStore(rootReducer);
-
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
